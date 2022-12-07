@@ -6,5 +6,10 @@ pipeline{
             git branch: 'main', url: 'https://github.com/Bha298/ahshsdhj.git'
             }
          }
+         stage('Unit testing '){
+            steps{
+                    sh 'mvn test'
+            }
+         }
          }
          }
