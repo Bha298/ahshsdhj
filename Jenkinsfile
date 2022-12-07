@@ -6,9 +6,9 @@ pipeline{
             git branch: 'main', url: 'https://github.com/Bha298/ahshsdhj.git'
             }
          }
-         stage('Unit testing '){
+         stage('mvn testing '){
             steps{
-                    sh 'mvn test'
+                    sh 'mvn clean install'
             }
          }
          }
